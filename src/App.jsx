@@ -4,7 +4,7 @@ import Stories from "./pages/Stories"
 import Features from "./pages/Features"
 import Pricing from "./pages/Pricing"
 
-const App = () => {
+function App(){
   return (
     <>
       <BrowserRouter>
@@ -12,7 +12,7 @@ const App = () => {
           <Route path="/" element={<Home/>} /> 
           <Route path="/features" element={<Features/>} />
           <Route path="/stories" element={<Stories/>} />
-          <Routes path="/pricing" element={<Pricing/>} />
+          <Route path="/pricing" element={<Pricing/>} />
         </Routes>
       </BrowserRouter>
     </>

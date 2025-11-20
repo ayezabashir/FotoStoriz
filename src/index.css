@@ -1,1 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme{
+    --font-roboto: "Roboto", sans-serif;
+}
+
+*,*::after,*::after{
+    @apply box-border m-0 p-0 font-roboto;
+}
+
+body{
+    @apply flex flex-col items-center justify-center text-base;
+}
+
+@layer components {
+    p{
+        @apply text-gray-700 text-base/6;
+    }
+}
