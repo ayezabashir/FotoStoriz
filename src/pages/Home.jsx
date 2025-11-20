@@ -1,9 +1,10 @@
 import Header from "../components/Header"
+import HeroComponent from "../components/HeroComponent"
 
 const Home = () => {
   return (
     <>
-      home
+      <HeroComponent />
     </>
   )
 }
