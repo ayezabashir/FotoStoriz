@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import { Button } from "./Button";
 
 const Header = () => {
   const nav = useNavigate();
@@ -15,8 +16,10 @@ const Header = () => {
           <li className="font-semibold tracking-widest text-black hover:underline underline-offset-2 transform transition-all delay-75 hover:-translate-y-1 cursor-pointer text-sm mx-1" onClick={()=>nav("/pricing")}>PRICING</li>
         </ul>
         <div>
-          <button type="button" className="bg-black hover:bg-black/90 cursor-pointer font-light text-white text-base p-2 w-40" onClick={()=>nav("/pricing")}>GET AN INVITE</button>
-        </div>
+          <Button variant="primary">
+            get an invite
+          </Button>
+          </div>
       </div>
     </header>
   )
