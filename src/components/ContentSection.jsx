@@ -3,19 +3,19 @@ import Button from "./Button";
 import arrowdark from "/src/assets/right-arrow-dark.svg";
 import arrowlight from "/src/assets/right-arrow-white.svg";
 
-export const ContentSection=({
-    title, 
+export const ContentSection = ({
+    title,
     description,
     img_mb,
     img_desk,
-    reverse=false,
-    dark=false,
+    reverse = false,
+    dark = false,
     className
-}) =>{
+}) => {
     return (
         <section
             className={cn(
-                "grid md:grid-cols-2 w-full",
+                "grid md:grid-cols-2 w-full md:h-[500px] overflow-hidden",
                 dark ? "bg-black text-white" : "bg-white text-black",
                 className
             )}
@@ -33,10 +33,14 @@ export const ContentSection=({
 
             </div>
             <div className={cn(
+                "h-full",
                 reverse && "md:order-1"
             )}>
-                <img srcSet={`${img_mb} 600w, ${img_desk} 1200w`} sizes="(max-width: 768px) 100vw, 50vw"
-                 className="w-full h-full object-cover" alt="image" />
+                <picture className="w-full h-full flex">
+                    <source className="object-cover"  media="(max-width:768px)" srcSet={img_mb} />
+                    <source  className="object-cover" media="(min-width:768px)" srcSet={img_desk} />
+                    <img  className="object-cover" src={img_desk} alt="hero image" />
+                </picture>
             </div>
 
         </section>

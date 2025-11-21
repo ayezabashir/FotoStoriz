@@ -19,6 +19,6 @@
 @layer components {
   p,
   li {
-    @apply text-gray-700 text-base/6;
+    @apply text-[#999] text-base/6;
   }
 }
