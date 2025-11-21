@@ -17,7 +17,7 @@ export const ContentSection = ({
     return (
         <section
             className={cn(
-                "flex flex-col-reverse md:flex-row w-full md:h-[500px] overflow-hidden",
+                "flex flex-col-reverse md:flex-row w-full md:h-[500px] lg:h-[600px] overflow-hidden",
                 dark ? "bg-black text-white" : "bg-white text-black",
                 className
             )}
