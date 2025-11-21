@@ -10,8 +10,8 @@ const HeroComponent = () => {
       description = "FotoSnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others"
       img_mb = {img1_mb}
       img_desk = {img1_desk}
-      reverse = "false"
-      dark= "true"
+      reverse = {false}
+      dark= {true}
       className
     />
   )

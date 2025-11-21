@@ -19,12 +19,12 @@ export const ContentSection = ({
             className={cn(
                 "flex flex-col-reverse md:flex-row w-full md:h-[500px] lg:h-[600px] overflow-hidden",
                 dark ? "bg-black text-white" : "bg-white text-black",
+                reverse ? "md:flex-row-reverse" : "",
                 className
             )}
         >
             <div className={cn(
                 "w-full md:w-[60%] lg:w-[40%] flex items-center justify-center p-7 md:p-10",
-                reverse ? "border-0 md-order-2" : "border border-l-2 border-gray"
             )}>
                 <div className="mx-auto flex flex-col justify-center gap-5 w-full md:max-w-[420px]">
                     <h2 className="text-3xl sm:text-4xl font-bold">{title}</h2>
@@ -37,7 +37,6 @@ export const ContentSection = ({
             </div>
             <div className={cn(
                 "h-full w-full md:w-[40%] lg:w-[60%] flex",
-                reverse && "md:order-1"
             )}>
                 <picture className="w-full h-full">
                     <source className="object-cover" media="(max-width:768px)" srcSet={img_mb} />
