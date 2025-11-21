@@ -16,7 +16,7 @@ const Header = () => {
           <li className="font-semibold tracking-widest text-black hover:underline underline-offset-2 transform transition-all delay-75 hover:-translate-y-1 cursor-pointer text-sm mx-1" onClick={()=>nav("/pricing")}>PRICING</li>
         </ul>
         <div>
-          <Button variant="primary">
+          <Button variant="primary" size="md">
             get an invite
           </Button>
           </div>

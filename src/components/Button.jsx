@@ -7,11 +7,11 @@ export const ButtonVariants = cva(
         variants:{
             variant: {
                 primary : "bg-black text-white hover:bg-black/90",
-                secondary: "bg-transparent flex justify-between items-center"
+                secondary: "bg-transparent"
             },
             size:{
-                sm: "w-40 p-2",
-                md: "w-80",
+                sm: "w-38 p-0",
+                md: "w-40 p-2",
                 lg: "w-full"
             },
         },
