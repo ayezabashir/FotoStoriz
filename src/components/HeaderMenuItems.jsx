@@ -5,7 +5,6 @@ const HeaderMenuItems = () => {
     const nav = useNavigate();
     return (
         <>
-
             <ul className="flex items-center justify-between gap-8">
                 <li className="font-semibold tracking-widest text-black hover:underline underline-offset-2 transform transition-all delay-75 hover:-translate-y-1 cursor-pointer text-sm mx-1" onClick={() => nav("/stories")}>STORIES</li>
                 <li className="font-semibold tracking-widest text-black hover:underline underline-offset-2 transform transition-all delay-75 hover:-translate-y-1 cursor-pointer text-sm mx-1" onClick={() => nav("/features")}>FEATURES</li>

@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom"
+import menu from "/src/assets/menu.svg";
+import Button from "./Button";
 import HeaderMenuItems from "./HeaderMenuItems";
 
 const Header = () => {
@@ -10,7 +12,14 @@ const Header = () => {
         <div onClick={() => nav("/")}>
           <h1 className="text-3xl font-stretch-110% font-extrabold tracking-wide cursor-pointer">FotoStoriz</h1>
         </div>
-        <HeaderMenuItems />
+        <div className="block md:hidden">
+          <Button variant="secondary" >
+            <img className="w-7" src={menu} alt="" />
+          </Button>
+        </div>
+        <div className="hidden md:flex items-center justify-between gap-8">
+          <HeaderMenuItems />
+        </div>
       </div>
     </header>
   )

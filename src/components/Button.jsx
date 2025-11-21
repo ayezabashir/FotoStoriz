@@ -7,7 +7,7 @@ export const ButtonVariants = cva(
         variants:{
             variant: {
                 primary : "bg-black text-white hover:bg-black/90",
-                secondary: "bg-transparent"
+                secondary: "bg-transparent outline-none"
             },
             size:{
                 sm: "w-38 p-0",
@@ -17,7 +17,6 @@ export const ButtonVariants = cva(
         },
         defaultVariants:{
             variant: "primary",
-            size: "sm"
         }
     }
 );
