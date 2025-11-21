@@ -2,15 +2,15 @@ import { cva } from "class-variance-authority";
 import { cn } from "../utils/cn";
 
 export const ButtonVariants = cva(
-    "cursor-pointer font-light text-white text-base uppercase",
+    "cursor-pointer font-light text-base uppercase",
     {
         variants:{
             variant: {
-                primary : "bg-black hover:bg-black/90 p-2",
-                secondary: "flex justify-between items-center gap-3"
+                primary : "bg-black text-white hover:bg-black/90",
+                secondary: "bg-transparent flex justify-between items-center"
             },
             size:{
-                sm: "w-40",
+                sm: "w-40 p-2",
                 md: "w-80",
                 lg: "w-full"
             },
