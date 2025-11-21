@@ -6,7 +6,8 @@ import arrowlight from "/src/assets/right-arrow-white.svg";
 export const ContentSection=({
     title, 
     description,
-    image,
+    img_mb,
+    img_desk,
     reverse=false,
     dark=false,
     className
@@ -25,16 +26,17 @@ export const ContentSection=({
             )}>
                 <h2 className="text-4xl font-bold">{title}</h2>
                 <p className="text-base leading-relaxed">{description}</p>
-                <Button variant="secondary" size="md" className={cn(dark ? "text-white" : "text-black")}>
+                <Button variant="secondary" size="sm" className={cn(dark ? "text-white" : "text-black")}>
                     get an invite
-                    <img src={dark ? arrowdark : arrowlight} alt="right arrow icon" />
+                    <img className="w-4" src={dark ? arrowlight : arrowdark} alt="right arrow icon" />
                 </Button>
 
             </div>
             <div className={cn(
                 reverse && "md:order-1"
             )}>
-                <img src={image} className="w-full h-full object-cover" alt="image" />
+                <img srcSet={`${img_mb} 600w, ${img_desk} 1200w`} sizes="(max-width: 768px) 100vw, 50vw"
+                 className="w-full h-full object-cover" alt="image" />
             </div>
 
         </section>
