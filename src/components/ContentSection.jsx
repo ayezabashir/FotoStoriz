@@ -21,7 +21,7 @@ export const ContentSection = ({
             )}
         >
             <div className={cn(
-                "my-32 mx-20 flex flex-col gap-5",
+                "my-32 mx-auto flex flex-col justify-center gap-5 max-w-[420px]",
                 reverse ? "border-0 md-order-2" : "border border-l-2 border-gray"
             )}>
                 <h2 className="text-4xl font-bold">{title}</h2>
@@ -30,7 +30,6 @@ export const ContentSection = ({
                     get an invite
                     <img className="w-4" src={dark ? arrowlight : arrowdark} alt="right arrow icon" />
                 </Button>
-
             </div>
             <div className={cn(
                 "h-full",
