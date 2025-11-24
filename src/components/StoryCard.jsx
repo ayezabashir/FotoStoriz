@@ -8,11 +8,12 @@ const StoryCard = (
     img_desk,
     img_mob,
     title,
-    author
+    author,
+    slug
   }) => {
   const nav = useNavigate()
   const handleNav = () => {
-    nav(`/story/${author}`, {
+    nav(`/story/${slug}`, {
       state: {
         img_desk,
         img_mob,

@@ -16,7 +16,7 @@ function App(){
           <Route path="/features" element={<Features/>} />
           <Route path="/stories" element={<Stories/>} />
           <Route path="/pricing" element={<Pricing/>} />
-          <Route path="/story/:author" element={<Story/>} />
+          <Route path="/story/:slug" element={<Story/>} />
         </Routes>
       </BrowserRouter>
     </>
