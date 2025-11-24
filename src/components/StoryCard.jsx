@@ -10,10 +10,17 @@ const StoryCard = (
     title,
     author
   }) => {
-    const nav = useNavigate()
-    const handleNav = ()=>{
-      nav(`/story/${author}`)
-    }
+  const nav = useNavigate()
+  const handleNav = () => {
+    nav(`/story/${author}`, {
+      state: {
+        img_desk,
+        img_mob,
+        title,
+        author
+      }
+    });
+  }
   return (
     <article className='h-[300px] md:h-[400px] w-full relative group overflow-hidden'>
       <div className='h-full w-full'>
