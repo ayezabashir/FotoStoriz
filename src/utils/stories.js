@@ -8,6 +8,8 @@ import cityscapes_desk from "/src/assets/cityscapes_desk.webp";
 import cityscapes_mb from "/src/assets/cityscapes_mb.webp";
 import king_desk from "/src/assets/king_desk.webp";
 import king_mb from "/src/assets/king_mb.webp";
+import trip_to_nowhere_desk from "/src/assets/trip_to_nowhere_desk.webp"
+import trip_to_nowhere_mb from "/src/assets/trip_to_nowhere_mb.webp"
 import land_of_dreams_desk from "/src/assets/land_of_dreams_desk.webp";
 import land_of_dreams_mb from "/src/assets/land_of_dreams_mb.webp";
 import milky_way_desk from "/src/assets/milky_way_desk.webp";
@@ -338,6 +340,26 @@ export const stories = [
       Watching the wild horses running free across the open plains was a breathtaking sight.
       Their manes flowed in the wind as they galloped with unrestrained joy, embodying the
       spirit of freedom and the untamed beauty of nature.
+    `,
+  },
+  {
+    id: 16,
+    date: "September 11th 2024",
+    title: "Trip to Nowhere",
+    author: {
+      name: "Edward King",
+      email: "edwardking@gmail.com",
+      address: "Berlin, Germany",
+      img: author_4,
+    },
+    slug: "edward-king-trip-to-nowhere",
+    img_mb: trip_to_nowhere_mb,
+    img_desk: trip_to_nowhere_desk,
+    categories: ["nature", "adventure", "travel"],
+    content: `
+      Sometimes, the best journeys are those without a set destination. My trip to nowhere
+      allowed me to embrace spontaneity and discover hidden gems along the way. Each day
+      brought new adventures and unexpected encounters that enriched my travel experience.
     `,
   },
 ];

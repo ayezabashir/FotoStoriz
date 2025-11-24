@@ -34,9 +34,9 @@ const StoryCard = (
       </div>
       <div className='absolute inset-0 bg-linear-to-t from-black/60 to-transparent'></div>
       <div className='absolute bottom-0 z-10 w-full px-5 py-2'>
-        <p className='text-white text-xs font-light'>{date}</p>
-        <h3 className="text-base uppercase text-white tracking-wide font-medium">{title}</h3>
-        <h4 className="text-xs text-white font-light">by {author}</h4>
+        <p className='text-white text-xs font-regular'>{date}</p>
+        <h3 className="text-base my-1 uppercase text-white tracking-wide font-medium">{title}</h3>
+        <h4 className="text-xs text-white font-regular">by {author}</h4>
         <div className='border-t border-white mt-3 py-2'>
           <Button size="lg" variant="secondary" className="flex text-white font-medium tracking-wider text-sm items-center justify-between group" onClick={handleNav} >
             READ STORY
