@@ -7,7 +7,10 @@ const Story = () => {
     }
     const { img_desk, img_mob, title, author } = state;
     return (
-        <div>{author} : Story of {title} </div>
+        <div>{author} : Story of {title}
+        <img src={img_desk} alt="" />
+        <img src={img_mob} alt="" />
+         </div>
     )
 }
 
