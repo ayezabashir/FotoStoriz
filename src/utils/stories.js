@@ -38,6 +38,10 @@ import author_5 from "/src/assets/author_5.webp";
 import author_6 from "/src/assets/author_6.webp";
 import fullmoon_desk from "/src/assets/full_moon_moutain_desk.webp";
 import fullmoon_mb from "/src/assets/full_moon_moutain_mb.webp";
+import iceland_desk from "/src/assets/visit-greenland_desk.webp";
+import iceland_mb from "/src/assets/visit-greenland_mb.webp";
+import naran_desk from "/src/assets/naran_kaghan_desk.webp";
+import naran_mb from "/src/assets/naran_kaghan_mb.webp";
 
 export const stories = [
   {
@@ -386,57 +390,47 @@ export const featureStory = [
       an ethereal quality to the scene. As it rose above the horizon, its light filtered through 
       the mist, creating a soft, diffused glow that illuminated the landscape below. The haze lent
       a dreamlike atmosphere to the night, enhancing the moon's natural beauty and casting long,
-      gentle shadows across the terrain. Observers were treated to a mesmerizing display of light
-      and shadow, as the moon's brilliance shone through the haze, creating a captivating and
-      unforgettable experience. 
+      gentle shadows across the terrain. 
     `,
   },
   {
-    id: 1,
-    date: "December 19th 2025",
-    title: "Full moon partially obscured by haze",
+    id: 2,
+    date: "Februrary 6th 2025",
+    title: "Iceland's Hidden Gems",
     author: {
-      name: "Nick Carraway",
-      email: "nickcarraway@gmail.com",
-      address: "Berlin, Germany",
-      img: author_6,
+      name: "Selena Williams",
+      email: "selenawilliams@gmail.com",
+      address: "Reykjavik, Iceland",
+      img: author_2,
     },
-    slug: "nick-carraway-full-moon",
-    img_mb: fullmoon_desk,
-    img_desk: fullmoon_mb,
-    categories: ["nature", "travel"],
+    slug: "selena-williams-icelands-hidden-gems",
+    img_mb: iceland_desk,
+    img_desk: iceland_mb,
+    categories: ["nature", "travel", "adventure"],
     content: `
-      The full moon was a spectacular sight, partially obscured by a thin veil of haze that added
-      an ethereal quality to the scene. As it rose above the horizon, its light filtered through 
-      the mist, creating a soft, diffused glow that illuminated the landscape below. The haze lent
-      a dreamlike atmosphere to the night, enhancing the moon's natural beauty and casting long,
-      gentle shadows across the terrain. Observers were treated to a mesmerizing display of light
-      and shadow, as the moon's brilliance shone through the haze, creating a captivating and
-      unforgettable experience. 
+      Iceland is a land of contrasts, where fire and ice coexist in a breathtaking display of
+      natural beauty. From the otherworldly landscapes of the Golden Circle to the serene
+      beauty of the Blue Lagoon, Iceland offers a wealth of hidden gems waiting to be explored. 
     `,
   },
   {
-    id: 1,
-    date: "December 19th 2025",
-    title: "Full moon partially obscured by haze",
+    id: 3,
+    date: "March 23rd 2025",
+    title: "Beauty of Naran Kaghan",
     author: {
-      name: "Nick Carraway",
-      email: "nickcarraway@gmail.com",
-      address: "Berlin, Germany",
-      img: author_6,
+      name: "Zulfiqar Hassan",
+      email: "zulfiqarhassan@gmail.com",
+      address: "Naran, Pakistan",
+      img: author_5,
     },
-    slug: "nick-carraway-full-moon",
-    img_mb: fullmoon_desk,
-    img_desk: fullmoon_mb,
-    categories: ["nature", "travel"],
+    slug: "zulfiqar-hassan-beauty-of-naran-kaghan",
+    img_mb: naran_mb,
+    img_desk:  naran_desk,
+    categories: ["nature", "travel", "adventure"],
     content: `
-      The full moon was a spectacular sight, partially obscured by a thin veil of haze that added
-      an ethereal quality to the scene. As it rose above the horizon, its light filtered through 
-      the mist, creating a soft, diffused glow that illuminated the landscape below. The haze lent
-      a dreamlike atmosphere to the night, enhancing the moon's natural beauty and casting long,
-      gentle shadows across the terrain. Observers were treated to a mesmerizing display of light
-      and shadow, as the moon's brilliance shone through the haze, creating a captivating and
-      unforgettable experience. 
+      Naran Kaghan Valley is a paradise for nature lovers, with its lush green meadows,
+      towering mountains, and crystal-clear lakes. The valley is a haven for adventure seekers,
+      offering opportunities for trekking, camping, and exploring the great outdoors.
     `,
   },
 ];
