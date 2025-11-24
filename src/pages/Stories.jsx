@@ -1,10 +1,12 @@
 import React from 'react'
 import { stories } from '../utils/stories'
 import StoryCard from '../components/StoryCard'
+import StoriesHeroComponent from '../components/StoriesHeroComponent'
 
 const Stories = () => {
   return (
     <>
+      <StoriesHeroComponent />
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4'>
         {
         stories.map((story) =>

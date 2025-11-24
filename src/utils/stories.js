@@ -8,8 +8,8 @@ import cityscapes_desk from "/src/assets/cityscapes_desk.webp";
 import cityscapes_mb from "/src/assets/cityscapes_mb.webp";
 import king_desk from "/src/assets/king_desk.webp";
 import king_mb from "/src/assets/king_mb.webp";
-import trip_to_nowhere_desk from "/src/assets/trip_to_nowhere_desk.webp"
-import trip_to_nowhere_mb from "/src/assets/trip_to_nowhere_mb.webp"
+import trip_to_nowhere_desk from "/src/assets/trip_to_nowhere_desk.webp";
+import trip_to_nowhere_mb from "/src/assets/trip_to_nowhere_mb.webp";
 import land_of_dreams_desk from "/src/assets/land_of_dreams_desk.webp";
 import land_of_dreams_mb from "/src/assets/land_of_dreams_mb.webp";
 import milky_way_desk from "/src/assets/milky_way_desk.webp";
@@ -36,6 +36,8 @@ import author_3 from "/src/assets/author_3.webp";
 import author_4 from "/src/assets/author_4.webp";
 import author_5 from "/src/assets/author_5.webp";
 import author_6 from "/src/assets/author_6.webp";
+import fullmoon_desk from "/src/assets/full_moon_moutain_desk.webp";
+import fullmoon_mb from "/src/assets/full_moon_moutain_mb.webp";
 
 export const stories = [
   {
@@ -112,7 +114,7 @@ export const stories = [
     slug: "liam-carter-architecture-wonders",
     img_mb: architecture_mb,
     img_desk: architecture_desk,
-    categories: ["architecture", "design","urban"],
+    categories: ["architecture", "design", "urban"],
     content: `
       The skyline was a testament to human ingenuity, with towering structures that
       defied gravity and challenged conventions. Each building told a story of vision and
@@ -274,7 +276,7 @@ export const stories = [
     slug: "sophia-johnson-calm-waters",
     img_mb: calm_waters_mb,
     img_desk: calm_waters_desk,
-    categories: ["nature", "travel","ocean"],
+    categories: ["nature", "travel", "ocean"],
     content: `
       The serene beauty of calm waters stretched out before me, reflecting the sky like a
       perfect mirror. As I sat by the shore, the gentle lapping of the waves created a
@@ -360,6 +362,81 @@ export const stories = [
       Sometimes, the best journeys are those without a set destination. My trip to nowhere
       allowed me to embrace spontaneity and discover hidden gems along the way. Each day
       brought new adventures and unexpected encounters that enriched my travel experience.
+    `,
+  },
+];
+
+export const featureStory = [
+  {
+    id: 1,
+    date: "December 19th 2025",
+    title: "Full moon partially obscured by haze",
+    author: {
+      name: "Nick Carraway",
+      email: "nickcarraway@gmail.com",
+      address: "Berlin, Germany",
+      img: author_6,
+    },
+    slug: "nick-carraway-full-moon",
+    img_mb: fullmoon_desk,
+    img_desk: fullmoon_mb,
+    categories: ["nature", "travel"],
+    content: `
+      The full moon was a spectacular sight, partially obscured by a thin veil of haze that added
+      an ethereal quality to the scene. As it rose above the horizon, its light filtered through 
+      the mist, creating a soft, diffused glow that illuminated the landscape below. The haze lent
+      a dreamlike atmosphere to the night, enhancing the moon's natural beauty and casting long,
+      gentle shadows across the terrain. Observers were treated to a mesmerizing display of light
+      and shadow, as the moon's brilliance shone through the haze, creating a captivating and
+      unforgettable experience. 
+    `,
+  },
+  {
+    id: 1,
+    date: "December 19th 2025",
+    title: "Full moon partially obscured by haze",
+    author: {
+      name: "Nick Carraway",
+      email: "nickcarraway@gmail.com",
+      address: "Berlin, Germany",
+      img: author_6,
+    },
+    slug: "nick-carraway-full-moon",
+    img_mb: fullmoon_desk,
+    img_desk: fullmoon_mb,
+    categories: ["nature", "travel"],
+    content: `
+      The full moon was a spectacular sight, partially obscured by a thin veil of haze that added
+      an ethereal quality to the scene. As it rose above the horizon, its light filtered through 
+      the mist, creating a soft, diffused glow that illuminated the landscape below. The haze lent
+      a dreamlike atmosphere to the night, enhancing the moon's natural beauty and casting long,
+      gentle shadows across the terrain. Observers were treated to a mesmerizing display of light
+      and shadow, as the moon's brilliance shone through the haze, creating a captivating and
+      unforgettable experience. 
+    `,
+  },
+  {
+    id: 1,
+    date: "December 19th 2025",
+    title: "Full moon partially obscured by haze",
+    author: {
+      name: "Nick Carraway",
+      email: "nickcarraway@gmail.com",
+      address: "Berlin, Germany",
+      img: author_6,
+    },
+    slug: "nick-carraway-full-moon",
+    img_mb: fullmoon_desk,
+    img_desk: fullmoon_mb,
+    categories: ["nature", "travel"],
+    content: `
+      The full moon was a spectacular sight, partially obscured by a thin veil of haze that added
+      an ethereal quality to the scene. As it rose above the horizon, its light filtered through 
+      the mist, creating a soft, diffused glow that illuminated the landscape below. The haze lent
+      a dreamlike atmosphere to the night, enhancing the moon's natural beauty and casting long,
+      gentle shadows across the terrain. Observers were treated to a mesmerizing display of light
+      and shadow, as the moon's brilliance shone through the haze, creating a captivating and
+      unforgettable experience. 
     `,
   },
 ];
