@@ -23,8 +23,8 @@ const Header = () => {
             <img className="w-7" src={menu} alt="" />
           </Button>
           {
-            showMenuItems && <div className="absolute right-0 bg-black/90 p-4 z-10">
-            <div className="flex flex-col items-end">
+            showMenuItems && <div className="absolute p-5 -right-7 bg-black z-10">
+            <div className="flex flex-col items-center justify-center">
               <HeaderMenuItems setShowMenuItems={setShowMenuItems} />
             </div>
           </div>
