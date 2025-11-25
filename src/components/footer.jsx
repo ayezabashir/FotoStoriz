@@ -10,9 +10,9 @@ const Footer = () => {
   const nav = useNavigate();
   return (
     <footer className='bg-black text-white'>
-      <div className='w-full md:max-w-[900px] mx-auto py-8 px-4 flex flex-col gap-5 md:flex-row justify-between'>
-        <div className='flex flex-col md:flex-row gap-2 md:gap-28'>
-          <div className="flex flex-col gap-2 md:justify-between items-center md:items-start">
+      <div className='w-full md:max-w-[900px] mx-auto py-8 px-4 flex flex-col gap-14 md:flex-row justify-between'>
+        <div className='flex flex-col md:flex-row gap-12 md:gap-28'>
+          <div className="flex flex-col gap-4  md:justify-between items-center md:items-start">
             <h1 className="text-3xl font-stretch-110% font-extrabold tracking-wide cursor-pointer">FotoStoriz</h1>
             <div className='flex items-center md:justify-between gap-2'>
               <img className="w-6" src={facebook_icon} alt="facebook" />
