@@ -23,9 +23,9 @@ const Header = () => {
             <img className="w-7" src={menu} alt="" />
           </Button>
           {
-            showMenuItems && <div className="absolute right-0 bg-black/90 p-4 rounded-xl">
+            showMenuItems && <div className="absolute right-0 bg-black/90 p-4 z-10">
             <div className="flex flex-col items-end">
-              <HeaderMenuItems />
+              <HeaderMenuItems setShowMenuItems={setShowMenuItems} />
             </div>
           </div>
           }
