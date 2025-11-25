@@ -372,7 +372,7 @@ export const stories = [
 
 export const featureStory = [
   {
-    id: 1,
+    id: 0,
     date: "December 19th 2025",
     title: "Full moon partially obscured by haze",
     author: {
@@ -394,7 +394,7 @@ export const featureStory = [
     `,
   },
   {
-    id: 2,
+    id: 1,
     date: "Februrary 6th 2025",
     title: "Iceland's Hidden Gems",
     author: {
@@ -414,7 +414,7 @@ export const featureStory = [
     `,
   },
   {
-    id: 3,
+    id: 2,
     date: "March 23rd 2025",
     title: "Beauty of Naran Kaghan",
     author: {
