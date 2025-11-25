@@ -11,27 +11,25 @@ const Footer = () => {
   return (
     <footer className='bg-black text-white'>
       <div className='w-full md:max-w-[900px] mx-auto py-8 px-4 flex flex-col gap-5 md:flex-row justify-between'>
-        <div className='flex gap-28'>
-          <div className="flex flex-col justify-between">
+        <div className='flex flex-col md:flex-row gap-2 md:gap-28'>
+          <div className="flex flex-col gap-2 md:justify-between items-center md:items-start">
             <h1 className="text-3xl font-stretch-110% font-extrabold tracking-wide cursor-pointer">FotoStoriz</h1>
-            <div className='flex items-center justify-between gap-2'>
+            <div className='flex items-center md:justify-between gap-2'>
               <img className="w-6" src={facebook_icon} alt="facebook" />
               <img className="w-6" src={twitter_icon} alt="twitter" />
               <img className="w-6" src={youtube_icon} alt="youtube" />
               <img className="w-6" src={insta_icon} alt="instgram" />
             </div>
           </div>
-          <div className='text-white'>
-            <ul className="flex flex-col items-start justify-between gap-4">
+            <ul className="flex flex-col items-center md:items-start justify-between gap-4">
               <li className="font-regular tracking-widest text-white cursor-pointer text-xs" onClick={() => nav("/")}>HOME</li>
               <li className="font-regular tracking-widest text-white cursor-pointer text-xs" onClick={() => nav("/stories")}>STORIES</li>
               <li className="font-regular tracking-widest text-white cursor-pointer text-xs" onClick={() => nav("/features")}>FEATURES</li>
               <li className="font-regular tracking-widest text-white cursor-pointer text-xs" onClick={() => nav("/pricing")}>PRICING</li>
             </ul>
-          </div>
         </div>
-        <div className="flex flex-col justify-between">
-          <Button variant="secondary" size="lg" className="flex justify-between items-center gap-5 group text-white" onClick={() => nav("/pricing")} >
+        <div className="flex flex-col items-center md:items-start gap-2 md:justify-between">
+          <Button variant="secondary" size="lg" className="flex justify-between items-center gap-5 w-[180px] group text-white" onClick={() => nav("/pricing")} >
             get an invite
             <img className="w-7 transition-transform duration-300 group-hover:translate-x-2" src={arrowlight} alt="right arrow icon" />
           </Button>
