@@ -24,7 +24,7 @@ const feature_icons = [
 
 const FeatureIcons = () => {
   return (
-    <div className="flex flex-col md:flex-row md:max-w-[900px] mx-auto my-5 gap-3">
+    <div className="flex flex-col sm:flex-row md:max-w-[900px] mx-auto my-14 gap-3">
       {
         feature_icons.map((icon, index)=>(
           <IconCards key={index} image={icon.feature_icon} heading={icon.feature_heading} paragraph={icon.feature_paragraph} />
