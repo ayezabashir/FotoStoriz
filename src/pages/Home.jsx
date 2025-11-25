@@ -1,4 +1,5 @@
 import FeatureBlock from "../components/FeatureBlock"
+import FeatureIcons from "../components/FeatureIcons"
 import FeatureStories from "../components/FeatureStories"
 import HeroComponent from "../components/HeroComponent"
 
@@ -8,6 +9,7 @@ const Home = () => {
       <HeroComponent />
       <FeatureBlock />
       <FeatureStories />
+      <FeatureIcons />
     </>
   )
 }
