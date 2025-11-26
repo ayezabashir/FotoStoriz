@@ -3,7 +3,7 @@ import StoryCard from './StoryCard'
 
 const FeatureStories = () => {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
       {
         stories.slice(0, 4).map((story) =>
           <StoryCard
