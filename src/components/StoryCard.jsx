@@ -5,22 +5,33 @@ import { useNavigate } from 'react-router-dom'
 
 const StoryCard = (
   {
+    date,
     img_desk,
     img_mob,
     title,
-    author,
-    date,
-    slug
+    author_name,
+    author_email,
+    author_address,
+    author_img,
+    categories,
+    content,
+    slug,
   }) => {
   const nav = useNavigate()
   const handleNav = () => {
     nav(`/story/${slug}`, {
       state: {
-        img_desk,
-        img_mob,
-        title,
-        author,
         date,
+    img_desk,
+    img_mob,
+    title,
+    author_name,
+    author_email,
+    author_address,
+    author_img,
+    categories,
+    content,
+    slug,
       }
     });
   }
@@ -36,7 +47,7 @@ const StoryCard = (
       <div className='absolute bottom-0 z-10 w-full px-5 py-2'>
         <p className='text-white text-xs font-regular'>{date}</p>
         <h3 className="text-base my-1 uppercase text-white tracking-wide font-medium">{title}</h3>
-        <h4 className="text-xs text-white font-regular">by {author}</h4>
+        <h4 className="text-xs text-white font-regular">by {author_name}</h4>
         <div className='border-t border-white mt-3 py-2'>
           <Button size="lg" variant="secondary" className="flex text-white font-medium tracking-wider text-sm items-center justify-between group" onClick={handleNav} >
             READ STORY

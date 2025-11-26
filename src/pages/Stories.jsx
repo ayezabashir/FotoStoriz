@@ -16,7 +16,12 @@ const Stories = () => {
             img_desk={story.img_desk}
             img_mob={story.img_mb}
             title={story.title}
-            author={story.author.name}
+            author_name={story.author.name}
+            author_email={story.author.email}
+            author_address={story.author.address}
+            author_img={story.author.img}
+            categories={story.categories}
+            content={story.content}
             slug={story.slug}
           />
         )
