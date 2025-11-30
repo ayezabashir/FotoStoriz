@@ -7,7 +7,7 @@ const Story = () => {
     }
     const { date, img_desk, img_mob, title, author_name, author_email, author_address, author_img, categories, content } = state;
     return (
-        <div className="w-full mx-auto py-12 px-4 md:max-w-[1100px]">
+        <div className="w-full mx-auto pb-14 pt-8 px-4 md:max-w-[1100px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="max-h-[400px]">
                     <picture>
@@ -21,12 +21,12 @@ const Story = () => {
                         <p className="italic text-base text-justify">{content}</p>
                         <p className="my-2 text-sm text-right underline italic underline-offset-4">{date}</p>
                     </div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center flex-wrap gap-2 md:mt-0 mt-3">
                         <h2 className="text-sm mr-4">Categories</h2>
                         {
                             categories.map((category) => (
                                 <span className="bg-black text-white px-4 py-1 rounded-md">
-                                    {category}
+                                    # {category}
                                 </span>
                             ))
                         }
@@ -36,7 +36,7 @@ const Story = () => {
             <div className="mt-10">
                 <h3 className="text-xl mb-5 font-semibold">About Author</h3>
                 <div className="flex items-center gap-5">
-                    <div className="w-36 h-36 overflow-hidden rounded-full flex items-center justify-center">
+                    <div className="w-28 h-28 sm:w-36 sm:h-36 overflow-hidden rounded-full flex items-center justify-center">
                         <picture>
                             <img src={author_img} className="object-cover rounded-full" alt="" />
                         </picture>
