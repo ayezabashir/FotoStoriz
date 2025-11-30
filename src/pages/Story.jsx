@@ -21,26 +21,28 @@ const Story = () => {
                     </div>
                     <div className="flex items-center gap-2">
                         <h2 className="text-sm mr-4">Categories</h2>
-                    {
-                        categories.map((category) => (
-                            <span className="bg-black text-white px-4 py-1 rounded-md">
-                                {category}
-                            </span>
-                        ))
-                    }
+                        {
+                            categories.map((category) => (
+                                <span className="bg-black text-white px-4 py-1 rounded-md">
+                                    {category}
+                                </span>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
-            <div>
-                <h2>About Author</h2>
-                <div>
-                    <picture>
-                        <img src={author_img} alt="" />
+            <div className="mt-10">
+                <h3 className="text-xl mb-5 font-semibold">About Author</h3>
+                <div className="flex items-center gap-5">
+                    <div className="w-36 h-36 overflow-hidden rounded-full">
+                        <picture>
+                        <img src={author_img} className="object-cover w-full" alt="" />
                     </picture>
+                    </div>
                     <div>
-                        <p>{author_name}</p>
-                        <p>{author_email}</p>
-                        <p>{author_address}</p>
+                        <p className="font-bold text-black text-xl mb-3">{author_name}</p>
+                        <p className="italic text-base">{author_email}</p>
+                        <p className="text-sm mt-1">{author_address}</p>
                     </div>
                 </div>
             </div>
