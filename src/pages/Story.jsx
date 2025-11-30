@@ -5,7 +5,7 @@ const Story = () => {
     if (!state) {
         return <p>No data found</p>
     }
-    const { date, img_desk, img_mob, title, author_name, author_email, author_address, author_img, categories, content, slug} = state;
+    const { date, img_desk, img_mob, title, author_name, author_email, author_address, author_img, categories, content} = state;
     return (
         <div className="w-full mx-auto py-12 px-4 md:max-w-[1100px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -16,6 +16,7 @@ const Story = () => {
                 <div>
                     <p>{categories}</p>
                     <h1>{title}</h1>
+                    <p>{content}</p>
                     <p>{date}</p>
                 </div>
             </div>

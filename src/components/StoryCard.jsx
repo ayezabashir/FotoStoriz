@@ -22,16 +22,15 @@ const StoryCard = (
     nav(`/story/${slug}`, {
       state: {
         date,
-    img_desk,
-    img_mob,
-    title,
-    author_name,
-    author_email,
-    author_address,
-    author_img,
-    categories,
-    content,
-    slug,
+        img_desk,
+        img_mob,
+        title,
+        author_name,
+        author_email,
+        author_address,
+        author_img,
+        categories,
+        content,
       }
     });
   }
