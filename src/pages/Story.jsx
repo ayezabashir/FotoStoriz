@@ -9,10 +9,12 @@ const Story = () => {
     return (
         <div className="w-full mx-auto py-12 px-4 md:max-w-[1100px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <picture>
-                    <source media='(min-width:768px)' srcSet={img_mob} />
-                    <img src={img_desk} className="w-full h-full object-cover object-center" alt={title} />
-                </picture>
+                <div className="max-h-[400px]">
+                    <picture>
+                        <source media='(min-width:768px)' srcSet={img_mob} />
+                        <img src={img_desk} className="w-full h-full object-cover object-center" alt={title} />
+                    </picture>
+                </div>
                 <div className="flex flex-col justify-between">
                     <div>
                         <h1 className="my-4 text-2xl font-bold">{title}</h1>
@@ -34,10 +36,10 @@ const Story = () => {
             <div className="mt-10">
                 <h3 className="text-xl mb-5 font-semibold">About Author</h3>
                 <div className="flex items-center gap-5">
-                    <div className="w-36 h-36 overflow-hidden rounded-full">
+                    <div className="w-36 h-36 overflow-hidden rounded-full flex items-center justify-center">
                         <picture>
-                        <img src={author_img} className="object-cover w-full" alt="" />
-                    </picture>
+                            <img src={author_img} className="object-cover rounded-full" alt="" />
+                        </picture>
                     </div>
                     <div>
                         <p className="font-bold text-black text-xl mb-3">{author_name}</p>
