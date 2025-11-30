@@ -5,7 +5,7 @@ const Story = () => {
     if (!state) {
         return <p>No data found</p>
     }
-    const { date, img_desk, img_mob, title, author_name, author_email, author_address, author_img, categories, content} = state;
+    const { date, img_desk, img_mob, title, author_name, author_email, author_address, author_img, categories, content } = state;
     return (
         <div className="w-full mx-auto py-12 px-4 md:max-w-[1100px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -13,11 +13,22 @@ const Story = () => {
                     <source media='(min-width:768px)' srcSet={img_mob} />
                     <img src={img_desk} className="w-full h-full object-cover object-center" alt={title} />
                 </picture>
-                <div>
-                    <p>{categories}</p>
-                    <h1>{title}</h1>
-                    <p>{content}</p>
-                    <p>{date}</p>
+                <div className="flex flex-col justify-between">
+                    <div>
+                        <h1 className="my-4 text-2xl font-bold">{title}</h1>
+                        <p className="italic text-base text-justify">{content}</p>
+                        <p className="my-2 text-sm text-right underline italic underline-offset-4">{date}</p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <h2 className="text-sm mr-4">Categories</h2>
+                    {
+                        categories.map((category) => (
+                            <span className="bg-black text-white px-4 py-1 rounded-md">
+                                {category}
+                            </span>
+                        ))
+                    }
+                    </div>
                 </div>
             </div>
             <div>
