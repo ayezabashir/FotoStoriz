@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Button from "./Button"
 import arrow from "/src/assets/right-arrow-white.svg";
 import { useNavigate } from "react-router-dom";
@@ -17,9 +16,10 @@ const StoriesHeroComponent = (
         categories,
         content,
         slug,
+        handleScrollLeft,
+        handleScrollRight
     }
 ) => {
-    let [currentId, setCurrentId] = useState(1);
     const nav = useNavigate();
     const handleNav = () => {
         nav(`/story/${slug}`, {
@@ -39,22 +39,7 @@ const StoriesHeroComponent = (
             }
         })
     }
-    const handleScrollLeft = () => {
-        setCurrentId((prev) => {
-            if (prev > 0) {
-                return prev - 1
-            }
-            return 2
-        })
-    }
-    const handleScrollRight = () => {
-        setCurrentId((prev) => {
-            if (prev < 2) {
-                return prev + 1
-            }
-            return 0
-        })
-    }
+
 
     return (
         <div className='w-full h-[500px] lg:h-[600px] relative'>
@@ -66,7 +51,7 @@ const StoriesHeroComponent = (
             </Button>
             {
                 <>
-                    <div key={currentId} className='h-full w-full'>
+                    <div key={key} className='h-full w-full'>
                         <picture>
                             <source media='(min-width:768px)' srcSet={img_mob} />
                             <img src={img_desk} className="w-full h-full object-cover object-center" alt="full moon background image" />
