@@ -2,7 +2,7 @@ import Button from "./Button"
 
 const PricingPlanComponent = ({plan_name, plan_desc, plan_price,bg_purple, plan_benefits, plan_btn}) => {
   return (
-    <div className='max-h-[500px] w-[300px] border-2 rounded-lg'>
+    <div className='max-h-[500px] w-[300px] border-2 rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300'>
       <div className="bg-black">
         <h1 className="text-center font-bold text-lg text-white px-3 py-6">{plan_name}</h1>
       </div>
@@ -18,7 +18,7 @@ const PricingPlanComponent = ({plan_name, plan_desc, plan_price,bg_purple, plan_
           }
         </ul>
         <div className="text-center mt-10">
-          <Button variant={bg_purple ===true ? "primary" : "secondary"} size={bg_purple ===true ? "md" : "sm"} className={`${bg_purple === true ? "border-0" : "border-2 py-2"}`}>
+          <Button variant={bg_purple ===true ? "primary" : "secondary"} size={bg_purple ===true ? "md" : "sm"} className={`${bg_purple === true ? "border-0" : "border-2 py-2"} hover:scale-105 transition-transform  ease-in-out`}>
           {plan_btn}
         </Button>
         </div>
