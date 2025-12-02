@@ -1,14 +1,10 @@
 import FeatureHeroComponent from '../components/FeatureHeroComponent'
-import AllFeatures from '../components/AllFeatures'
-import FeatureComponent from '../components/FeatureComponent'
 
 const Features = () => {
   return (
-    <>
+    <div className='h-screen'>
       <FeatureHeroComponent />
-      <AllFeatures />
-      <FeatureComponent />
-    </>
+    </div>
   )
 }
 
