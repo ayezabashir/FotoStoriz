@@ -29,7 +29,7 @@ const plans = [
 
 const PricingPlans = () => {
   return (
-    <div className='mx-7 my-7 md:my-36'>
+    <div className='mx-7 mt-7 md:mt-36 md:mb-10'>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:gap-4 justify-items-center'>
         {
           plans.map((plan, index) => (

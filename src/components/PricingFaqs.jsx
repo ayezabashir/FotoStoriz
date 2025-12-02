@@ -20,7 +20,7 @@ const faqs = [
 
 const PricingFaqs = () => {
   return (
-    <div className='mx-4'>
+    <div className='mx-4 mb-14'>
       <h2 className='text-3xl text-center mb-5 font-black'>FAQ</h2>
         <div className='max-w-3xl'>
           {
