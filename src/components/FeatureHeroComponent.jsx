@@ -8,22 +8,22 @@ const features = [
   {
     heading: "Story-Driven Photo Layouts",
     icon: layout,
-    desc : "FotoStoriz transforms your images into immersive, narrative-based layouts. Each story section is crafted to highlight emotions, moments, and visual flow—making your gallery feel like a living memory book."
+    desc : "FotoStoriz transforms your images into immersive, narrative-based layouts. Each story section is crafted to highlight emotions & moments"
   },
   {
     heading: "Dynamic Hero Story Showcase",
     icon: sparkle,
-    desc: "Your best story or featured collection automatically appears in a premium hero section with large imagery, date, and context. It acts as a spotlight for your standout work, instantly grabbing viewers’ attention."
+    desc: "Your best story or featured collection automatically appears in a premium hero section with large imagery, date, and context. "
   },
   {
-    heading: "Interactive Story Cards",
+    heading: "Interactive Story Featured Cards",
     icon: cards,
-    desc: "Every story is displayed through elegant, hover-responsive cards that reveal more details as users interact. Smooth transitions and micro-animations make browsing fluid, intuitive, and visually engaging."
+    desc: "Every story is displayed through elegant, hover-responsive cards that reveal more details as users interact. "
   },
   {
-    heading: "Fully Responsive & Device-Optimized",
+    heading: "Fully Responsive & Optimized",
     icon: devices,
-    desc: "From large desktop screens to mobile phones, FotoStoriz adapts seamlessly. Images resize intelligently, text scales for readability, and each component maintains its aesthetic"
+    desc: "From large desktop screens to mobile phones, FotoStoriz adapts seamlessly. Images resize intelligently, text scales for readability"
   }
 ]
 
@@ -33,7 +33,13 @@ const FeatureHeroComponent = () => {
         <div className="max-w-[1200px] py-10 mx-auto">
             <div className="mx-7 text-center">
               <h1 className="text-3xl font-bold text-white">Checkout All the Features</h1>
-              <FeatureComponent />
+              <div className="flex justify-between gap-8">
+                {
+                  features.map((feature, index)=>(
+                    <FeatureComponent key={index} heading={feature.heading} icon={feature.icon} desc={feature.desc} />
+                  ))
+                }
+              </div>
             </div>
         </div>
     </div>
