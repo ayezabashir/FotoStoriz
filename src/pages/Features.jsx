@@ -1,8 +1,14 @@
-import React from 'react'
+import FeatureHeroComponent from '../components/FeatureHeroComponent'
+import AllFeatures from '../components/AllFeatures'
+import FeatureComponent from '../components/FeatureComponent'
 
 const Features = () => {
   return (
-    <div>Features</div>
+    <>
+      <FeatureHeroComponent />
+      <AllFeatures />
+      <FeatureComponent />
+    </>
   )
 }
 
