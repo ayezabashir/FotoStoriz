@@ -3,11 +3,11 @@ import React from 'react'
 const PricingComparisonTable = () => {
   return (
     <div className='mx-4 flex flex-col items-center justify-center'>
-      <div className='max-w-[420px] text-center text-purple-400 mb-7'>
-        <h2 className='font-black text-3xl mb-7'>Feature Comparison Table</h2>
+      <div className='max-w-[420px] text-center'>
+        <h2 className='font-black text-3xl mb-3'>Feature Comparison Table</h2>
         <p>Compare Features to find the perfect plan for your needs</p>
       </div>
-      <table className='w-full bg-purple-50 rounded-lg '>
+      <table className='w-full bg-purple-50 rounded-lg my-7'>
         <thead>
           <tr className='border-b border-gray-300'>
             <th className='p-4 text-start'>Features</th>
