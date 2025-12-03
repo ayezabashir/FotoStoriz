@@ -1,6 +1,7 @@
 import PricingHeroComponent from '../components/PricingHeroComponent'
 import PricingPlans from '../components/PricingPlans'
 import PricingFaqs from '../components/PricingFaqs'
+import QueryForm from '../components/QueryForm'
 
 const Pricing = () => {
   return (
@@ -8,6 +9,7 @@ const Pricing = () => {
       <PricingHeroComponent />
       <PricingPlans />
       <PricingFaqs />
+      <QueryForm />
     </div>
   )
 }
