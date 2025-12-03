@@ -8,7 +8,9 @@ const Pricing = () => {
     <div className='max-w-[1200px] mx-auto'>
       <PricingHeroComponent />
       <PricingPlans />
-      <PricingFaqs />
+      <div className='max-w-[900px] mx-auto'>
+        <PricingFaqs />
+      </div>
       <QueryForm />
     </div>
   )
