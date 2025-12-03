@@ -6,9 +6,6 @@ Brief, polished landing site and storytelling UI built with modern front-end too
 - **Purpose:** Marketing/landing pages for a photo/story product.
 - **Contents:** Home, Features, Pricing, Stories, Story detail pages, reusable UI components.
 
-**Why this README**
-This README documents the features, technologies, accessibility & responsiveness considerations, development setup, and contribution guidelines for the FotoStoriz project.
-
 **Features**
 - **Multi-page layout:** Home, Features, Pricing, Stories, single Story view.
 - **Reusable components:** Buttons, Hero sections, Feature blocks, Story cards, Pricing plans, FAQ, Header/Footer, Form components.
