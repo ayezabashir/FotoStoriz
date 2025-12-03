@@ -1,16 +1,87 @@
-# React + Vite
+**FotoStoriz**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Brief, polished landing site and storytelling UI built with modern front-end tools. FotoStoriz is a small product/marketing site focused on stories, pricing, and feature pages — implemented with a component-driven React + Vite stack and Tailwind CSS.
 
-Currently, two official plugins are available:
+**Quick summary**
+- **Purpose:** Marketing/landing pages for a photo/story product.
+- **Contents:** Home, Features, Pricing, Stories, Story detail pages, reusable UI components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Why this README**
+This README documents the features, technologies, accessibility & responsiveness considerations, development setup, and contribution guidelines for the FotoStoriz project.
 
-## React Compiler
+**Features**
+- **Multi-page layout:** Home, Features, Pricing, Stories, single Story view.
+- **Reusable components:** Buttons, Hero sections, Feature blocks, Story cards, Pricing plans, FAQ, Header/Footer, Form components.
+- **Routing:** Client-side routing with `react-router-dom`.
+- **Responsive design:** Mobile-first layout with Tailwind CSS utilities and responsive components.
+- **Accessibility-minded markup:** Semantic HTML, keyboard-friendly navigation, focus states, and considerate ARIA where appropriate.
+- **Modern tooling:** Fast dev server and optimized builds with Vite.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Technologies & Libraries**
+- **Framework:** `react` (v19)
+- **Bundler / Dev server:** `vite` (with `@vitejs/plugin-react`)
+- **Styling:** `tailwindcss` (v4) and utilities like `clsx`, `class-variance-authority`, and `tailwind-merge` for class composition
+- **Routing:** `react-router-dom`
+- **Linting:** `eslint` with React plugins (`@eslint/js`, `eslint-plugin-react-hooks`, `eslint-plugin-react-refresh`)
+- **Dev tooling:** Type definitions (`@types/react`, `@types/react-dom`) and Vite React plugin
 
-## Expanding the ESLint configuration
+**Accessibility (A11y)**
+- **Semantic HTML:** Components use proper heading levels, landmarks (header/footer/main), lists, and buttons.
+- **Keyboard navigation:** Interactive elements are keyboard focusable; dropdowns/menus should be reachable and operable with keyboard controls.
+- **Visible focus states:** Focus outlines are preserved for keyboard users and not removed visually.
+- **Alt text:** Images in `src/assets` and story cards include alt text where applicable; add descriptive alt text for content images.
+- **Contrast & readability:** Text colors and background combinations follow good contrast practices (verify with an automated checker).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Accessibility notes: run an automated scanner (like axe) and manual keyboard testing to find gaps. Add ARIA attributes only where semantic HTML is insufficient.
+
+**Responsiveness**
+- The project uses a mobile-first Tailwind setup. Components include responsive utility classes (sm/md/lg/xl breakpoints) to adapt layout and spacing.
+- Hero images, story cards, and grids collapse to single-column layouts on small screens and expand to multi-column layouts on larger screens.
+
+**Project Structure (important files)**
+- `index.html` — Vite entry HTML
+- `src/main.jsx` — app bootstrap
+- `src/App.jsx` — top-level routes and layout
+- `src/pages/` — `Home.jsx`, `Features.jsx`, `Pricing.jsx`, `Stories.jsx`, `Story.jsx`
+- `src/components/` — small, reusable components (e.g., `Header.jsx`, `HeroComponent.jsx`, `StoryCard.jsx`, `PricingPlans.jsx`)
+- `src/utils/` — helpers like `cn.js` (className utility) and `stories.js` (sample story data)
+- `package.json` — scripts and dependencies
+
+**Getting Started (Development)**
+
+Requirements:
+- Node.js (recommended LTS >= 18)
+- npm (or use `pnpm`/`yarn` if preferred — adjust commands accordingly)
+
+Install dependencies and run the development server:
+
+```powershell
+# install dependencies
+npm install
+
+# start dev server (Vite)
+npm run dev
+```
+
+Available scripts (from `package.json`):
+- `npm run dev` — start Vite dev server with HMR
+- `npm run build` — produce optimized production build
+- `npm run preview` — locally preview the production build
+- `npm run lint` — run ESLint across the codebase
+
+Build & preview production bundle:
+
+```powershell
+npm run build
+npm run preview
+```
+
+**Usage / How the app is organized**
+- Routes are defined in `src/App.jsx` and map to the pages in `src/pages/`.
+- Components are intentionally small and composable — to add a new section, create a component under `src/components/` and import it into the appropriate page.
+
+**Styling conventions**
+- Tailwind CSS is used for layout and utilities.
+- Use `clsx` + `class-variance-authority` patterns for conditionally composed class names and variants.
+- `tailwind-merge` is used to safely merge utility class strings when needed.
+
