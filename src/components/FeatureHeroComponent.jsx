@@ -35,7 +35,7 @@ const FeatureHeroComponent = () => {
         <div className="max-w-[1200px] py-10 mx-auto">
             <div className="mx-7 text-center">
               <h1 className="text-3xl font-bold text-white">Checkout All the Features</h1>
-              <div className="mt-[34px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full gap-8">
+              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full gap-8">
                 {
                   features.map((feature, index)=>(
                     <FeatureComponent key={index} heading={feature.heading} icon={feature.icon} desc={feature.desc} />
