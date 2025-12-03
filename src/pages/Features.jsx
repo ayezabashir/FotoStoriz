@@ -2,7 +2,7 @@ import FeatureHeroComponent from '../components/FeatureHeroComponent'
 
 const Features = () => {
   return (
-    <div className='min-h-screen'>
+    <div>
       <FeatureHeroComponent />
     </div>
   )
