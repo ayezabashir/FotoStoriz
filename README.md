@@ -82,3 +82,14 @@ npm run preview
 - Use `clsx` + `class-variance-authority` patterns for conditionally composed class names and variants.
 - `tailwind-merge` is used to safely merge utility class strings when needed.
 
+**Screenshots**
+***Home Page***
+![foto-storiz vercel app_(Nest Hub Max)](https://github.com/user-attachments/assets/35e5ff26-75ab-4636-a3b8-c6555207b659)
+***Features Page***
+![foto-storiz vercel app_(Nest Hub Max) (3)](https://github.com/user-attachments/assets/45930d3e-13a2-49e4-b576-55d636f12d4b)
+***Stories Page***
+![foto-storiz vercel app_(Nest Hub Max) (2)](https://github.com/user-attachments/assets/71c36072-4a92-4761-9bac-f16c9b1fe213)
+***Story Page***
+![foto-storiz vercel app_story_jonh-prickston-cityscapes(Nest Hub Max)](https://github.com/user-attachments/assets/26119545-7fd5-4463-9dc5-8ea682894f78)
+***Pricing Page***
+![foto-storiz vercel app_(Nest Hub Max) (4)](https://github.com/user-attachments/assets/33397284-b5c6-4d36-a896-ab3c667bcca7)
