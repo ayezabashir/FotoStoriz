@@ -15,9 +15,13 @@ const QueryForm = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!userName.trim() || !userQuery.trim() || !emailRef.current.validity.valid) {
+        if (!userName.trim() || !userQuery.trim()) {
             setError("Please fill all fields with valid input");
             return;
+        }
+        if(!emailRef.current.validity.valid){
+            setError("Please fill the valid email");
+            return
         }
         setError("");
         setUserEmail("");
@@ -32,7 +36,7 @@ const QueryForm = () => {
     return (
         <div className='max-w-[900px] my-10 mx-auto'>
             <div className='mx-4 relative'>
-                <h2 className='text-center text-xl font-semibold'>Still Got Any Question?</h2>
+                <h2 className='text-center text-xl font-semibold'>Don't see your question?</h2>
                 <h3 className='text-center text-3xl font-bold'>Contact Us</h3>
                 <form className='max-w-[400px] mx-auto' noValidate onSubmit={handleSubmit}>
                     <div className='border-b flex flex-col gap-4 mt-5'>
